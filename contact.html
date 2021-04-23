@@ -15,14 +15,14 @@
 		<script src="https://kit.fontawesome.com/6aa1c0cc59.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/styles.css" />
 		<title>Torres Tech</title>
 	</head>
 
 	<body>
 		<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
-			<a class="navbar-brand" href="#">
+			<a class="navbar-brand" href="index.html">
 				<img src="images/logo.png" width="40" height="40" alt="logo" />
 			</a>
 			<button
@@ -40,7 +40,7 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="#">
+						<a class="nav-link" href="index.html">
 							Home
 							<span class="sr-only">(current)</span>
 						</a>
@@ -64,53 +64,72 @@
 						</div>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="contact.html">Contact</a>
+						<a class="nav-link" href="#">Contact</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
-		<main role="main">
-			<div class="jumbotron">
-				<div class="container">
-					<h1 class="display-3">Torres Technology Consulting</h1>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-						nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					</p>
-					<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+		<main role="main" class="container mt-4">
+			<div class="row row-content">
+				<div class="col-12">
+					<h2>Request More Information</h2>
+					<hr />
 				</div>
-			</div>
+				<div class="col-md-10">
+					<form>
+						<div class="form-group row">
+							<label for="firstName" class="col-md-2 col-form-label">First Name</label>
+							<div class="col-md-10">
+								<input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+							<div class="col-md-10">
+								<input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
+							<div class="col-5 col-md-3">
+								<input type="tel" id="areaCode" class="form-control" name="areaCode" placeholder="Area Code" />
+							</div>
+							<div class="col-7">
+								<input type="tel" class="form-control" name="telNum" placeholder="Tel. Number" />
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="email" class="col-md-2 col-form-label">Email</label>
+							<div class="col-md-10">
+								<input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+							</div>
+						</div>
 
-			<div class="container">
-				<div class="row">
-					<div class="card-deck">
-						<div class="card">
-							<a href="services.html">
-								<img src="images/Tech Support.jpg" class="card-img-top embed-responsive embed-responsive-16by9" alt="remote desktop img" />
-							</a>
-							<div class="card-body d-flex flex-column">
-								<h5 class="card-title">IT Support</h5>
-								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								<a href="services.html" type="button" class="btn btn-danger mt-auto">More Info</a>
+						<div class="form-group row">
+							<div class="col offset-md-2">
+								May we Contact You?
+								<div class="form-check form-check-inline">
+									<input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes" />
+									<label for="contactYes" class="form-check-label">Yes</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" />
+								</div>
+								<label for="contactNo" class="form-check-label">No</label>
 							</div>
 						</div>
-						<div class="card">
-							<a href="services.html#theater"><img src="images/home-theater-1.jpg" class="card-img-top embed-responsive embed-responsive-16by9" alt="..." /></a>
-							<div class="card-body d-flex flex-column">
-								<h5 class="card-title">Home Theater</h5>
-								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								<a href="services.html#theater" type="button" class="btn btn-danger mt-auto">More Info</a>
+						<div class="form-group row">
+							<label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+							<div class="col-md-10">
+								<textarea class="form-control" id="feedback" name="feedback" rows="8"></textarea>
 							</div>
 						</div>
-						<div class="card">
-							<a href="services.html#custom"><img src="images/pc-lineup2.webp" class="card-img-top embed-responsive embed-responsive-16by9" alt="..." /></a>
-							<div class="card-body d-flex flex-column">
-								<h5 class="card-title">Custom Computers</h5>
-								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								<a href="services.html#custom" type="button" class="btn btn-danger mt-auto">More Info</a>
+						<div class="form-group row">
+							<div class="offset-md-2 col-md-10">
+								<button type="submit" class="btn btn-danger">Send</button>
 							</div>
 						</div>
-					</div>
+					</form>
 				</div>
 			</div>
 		</main>
