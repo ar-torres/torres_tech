@@ -13,9 +13,9 @@
 		/>
 		<!-- Additional CSS must be placed after Bootstrap CSS -->
 		<script src="https://kit.fontawesome.com/6aa1c0cc59.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+		<!-- <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" /> -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="css/styles.css" />
 		<title>Torres Tech</title>
 	</head>
@@ -23,61 +23,71 @@
 	<body>
 		<!-- NAVBAR -->
 		<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
-			<a class="navbar-brand" href="index.html">
-				<img src="images/logo.png" width="40" height="40" alt="logo" />
-			</a>
-			<button
-				class="navbar-toggler"
-				type="button"
-				data-toggle="collapse"
-				data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			>
-				<span class="navbar-toggler-icon"></span>
-			</button>
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo.png" width="40" height="40" alt="logo" />
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">
-							Home
-							<span class="sr-only">(current)</span>
-						</a>
-					</li>
-					<li class="nav-item dropdown active">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Services
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="services.html#support">IT Support</a>
-							<a class="dropdown-item" href="services.html#theater">Home Theater</a>
-							<a class="dropdown-item" href="services.html#custom">Custom Computers</a>
-						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contact.html">Contact</a>
-					</li>
-				</ul>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">
+								Home
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="services.html"
+								id="navbarDropdown"
+								role="button"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								Services
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="services.html">IT Support</a>
+								<a class="dropdown-item" href="services.html#theater">Home Theater</a>
+								<a class="dropdown-item" href="services.html#custom">Custom Computers</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 		<!-- CONTAINER -->
 		<div class="container">
 			<!-- IT Servies -->
-			<div class="row py-5" id="support">
+			<div class="row pt-5 pb-4" id="support">
 				<div class="col-sm">
 					<h3>IT Support & Consulting</h3>
-					<!-- <p>
-						Services include removing computer viruses; graphic design; design, research, build, and installation of custom computers, networks. Trained customers on various software and
-						hardware, including Microsoft Office Suite, Android and iOS phones.
-					</p> -->
+					<p>
+						We offer a wide range of services from virus & spyware removal to setting up smart home devices. If you need something that isn't listed, please ask and we
+						can help.
+					</p>
 					<!-- IT Accordion -->
 					<div class="accordion" id="accordionIT">
 						<div class="card">
 							<div class="card-header" id="headingOne">
 								<h2 class="mb-0">
-									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									<button class="btn itHeader" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 										Computer Services
 									</button>
 								</h2>
@@ -85,18 +95,15 @@
 
 							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionIT">
 								<div class="card-body">
-									<!-- <P>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-									skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-									coffee nulla assumenda shoreditch et.</P> -->
-									<div class="form-check form-check-inline">
+									<div class="form-check form-check-inline ml-3">
 										<input class="form-check-input" type="checkbox" id="csCheckbox1" value="csOption1" />
 										<label class="form-check-label" for="csCheckbox1">Virus & Spyware Removal</label>
 									</div>
-									<div class="form-check form-check-inline">
+									<div class="form-check form-check-inline ml-3">
 										<input class="form-check-input" type="checkbox" id="csCheckbox2" value="csOption2" />
 										<label class="form-check-label" for="csCheckbox2">Computer Diagnosis & Repair</label>
 									</div>
-									<div class="form-check form-check-inline">
+									<div class="form-check form-check-inline ml-3">
 										<input class="form-check-input" type="checkbox" id="csCheckbox3" value="csOption3" />
 										<label class="form-check-label" for="csCheckbox3">Data Transfer & Recovery</label>
 									</div>
@@ -107,7 +114,7 @@
 							<div class="card-header" id="headingTwo">
 								<h2 class="mb-0">
 									<button
-										class="btn btn-link collapsed"
+										class="btn collapsed itHeader"
 										type="button"
 										data-toggle="collapse"
 										data-target="#collapseTwo"
@@ -120,18 +127,15 @@
 							</div>
 							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionIT">
 								<div class="card-body">
-									<!-- <P>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                                        skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-                                        coffee nulla assumenda shoreditch et.</P> -->
-									<div class="form-check form-check-inline">
+									<div class="form-check form-check-inline ml-3">
 										<input class="form-check-input" type="checkbox" id="esCheckbox1" value="esOption1" />
 										<label class="form-check-label" for="esCheckbox1">TV Connect and Setup</label>
 									</div>
-									<div class="form-check form-check-inline">
+									<div class="form-check form-check-inline ml-3">
 										<input class="form-check-input" type="checkbox" id="esCheckbox2" value="esOption2" />
 										<label class="form-check-label" for="esCheckbox2">Audio Services</label>
 									</div>
-									<div class="form-check form-check-inline">
+									<div class="form-check form-check-inline ml-3">
 										<input class="form-check-input" type="checkbox" id="esCheckbox3" value="esOption3" />
 										<label class="form-check-label" for="esCheckbox3">Harmony Remote Control Programming</label>
 									</div>
@@ -142,7 +146,7 @@
 							<div class="card-header" id="headingThree">
 								<h2 class="mb-0">
 									<button
-										class="btn btn-link collapsed"
+										class="btn collapsed itHeader"
 										type="button"
 										data-toggle="collapse"
 										data-target="#collapseThree"
@@ -155,18 +159,15 @@
 							</div>
 							<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionIT">
 								<div class="card-body">
-									<!-- <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                                        skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-                                        coffee nulla assumenda shoreditch et.</P> -->
-									<div class="form-check form-check-inline">
+									<div class="form-check form-check-inline ml-3">
 										<input class="form-check-input" type="checkbox" id="hsCheckbox1" value="hsOption1" />
 										<label class="form-check-label" for="hsCheckbox1">TV Mounting</label>
 									</div>
-									<div class="form-check form-check-inline">
+									<div class="form-check form-check-inline ml-3">
 										<input class="form-check-input" type="checkbox" id="hsCheckbox2" value="hsOption2" />
 										<label class="form-check-label" for="hsCheckbox2">Wifi Network Setup</label>
 									</div>
-									<div class="form-check form-check-inline">
+									<div class="form-check form-check-inline ml-3">
 										<input class="form-check-input" type="checkbox" id="hsCheckbox3" value="hsOption3" />
 										<label class="form-check-label" for="hsCheckbox3">Smart Home Devices</label>
 									</div>
@@ -174,13 +175,19 @@
 							</div>
 						</div>
 					</div>
-					<a href="https://remotedesktop.google.com/support" target="_blank" type="button" class="btn btn-danger mt-2">Schedule Services</a>
+					<a role="button" id="itConsultButton" class="btn btn-danger m-4">Schedule Services</a>
 				</div>
-				<div class="card" id="remoteCard">
+				<!-- Remote Desktop -->
+				<div class="card mt-1 mb-5 d-flex mx-auto" id="remoteCard">
 					<a href="https://remotedesktop.google.com/support"><img src="images/chrome-remote.png" class="card-img-top img-fluid mx-auto d-block mt-4" alt="..." /></a>
 					<div class="card-body d-flex flex-column">
 						<h5 class="card-title">Remote Desktop Support</h5>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<p class="card-text">
+							Is your computer not working as well as it used to? Not sure what's going on?
+							<br />
+							<br />
+							Start a remote desktop session and we can take a look.
+						</p>
 						<a href="https://remotedesktop.google.com/support" target="_blank" type="button" class="btn btn-danger mt-auto">Begin Remote Session</a>
 					</div>
 				</div>
@@ -188,7 +195,7 @@
 			<!-- Home Theater -->
 			<div class="row bg-dark text-light py-5" id="theater">
 				<div class="col-sm">
-					<div id="carouselExampleCaptions" class="carousel slide py-3" data-ride="carousel">
+					<div id="carouselExampleCaptions" class="carousel slide carousel-fade py-3" data-ride="carousel">
 						<ol class="carousel-indicators">
 							<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
 							<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -227,9 +234,18 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-sm">
+				<div class="col-sm pt-2">
 					<h3>Home Theater</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<p>
+						Your theater can look like these or something completely different. Let us make your vision a reality.
+						<br />
+						<br />
+						It's also important to select and setup the proper components. From TVs and projectors, to immersive surround sound systems, to networked media solutions;
+						we have you covered.
+						<br />
+						<br />
+						Schedule a consultation and we'll bring the theater experience home.
+					</p>
 					<a role="button" id="htConsultButton" class="btn btn-danger m-4">Schedule Consultation</a>
 				</div>
 			</div>
@@ -237,7 +253,10 @@
 			<div class="row py-5" id="custom">
 				<div class="col-sm mt-4">
 					<h3>Custom Computers</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<p>
+						We build tailor-made desktops for each customer. If you need something for work, games, video editing, streaming, or a little of everything, we can build
+						it. Each computer we build is unique, so request a quote to see what we can build for you.
+					</p>
 					<a role="button" id="pcQuoteButton" class="btn btn-danger m-4">Request Quote</a>
 				</div>
 				<div class="col-sm mt-4">
@@ -246,6 +265,63 @@
 			</div>
 		</div>
 		<!-- MODALS -->
+		<!-- IT Support Modal -->
+		<div id="itConsultModal" class="modal fade" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header bg-dark text-white">
+						<h3 class="modal-title">Schedule IT Services</h3>
+						<button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+						<div class="container-fluid">
+							<form>
+								<div class="form-group row">
+									<label for="inputFirst" class="col-sm-3 col-form-label">First Name</label>
+									<div class="col-sm-9">
+										<input type="text" class="form-control" id="inputFirst" placeholder="First Name" />
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="inputLast" class="col-sm-3 col-form-label">Last Name</label>
+									<div class="col-sm-9">
+										<input type="text" class="form-control" id="inputLase" placeholder="Last Name" />
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="inputEmail" class="col-sm-3 col-form-label">Email</label>
+									<div class="col-sm-9">
+										<input type="email" class="form-control" id="inputEmail" placeholder="Email" />
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="inputPhone" class="col-sm-3 col-form-label">Phone Number</label>
+									<div class="col-sm-4">
+										<input type="tel" class="form-control" id="inputPhone" placeholder="Phone Number" />
+									</div>
+								</div>
+								<div class="row form-group">
+									<label class="col-sm-3 col-form-label" for="date">Schedule Services</label>
+									<div class="col-sm-4">
+										<input class="form-control" type="date" id="date" name="date" min="2021-04-24" />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="exampleFormControlTextarea1">Additional Questions or Comments</label>
+									<textarea class="form-control" id="htPreferences" rows="3"></textarea>
+								</div>
+								<div class="form-group row">
+									<div class="col">
+										<button type="submit" class="btn btn-danger">Submit</button>
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- Home Theater Modal -->
 		<div id="htConsultModal" class="modal fade" role="dialog">
 			<div class="modal-dialog modal-lg" role="document">
@@ -284,11 +360,11 @@
 								<div class="row form-group">
 									<label class="col-sm-3 col-form-label" for="date">Schedule Consultation</label>
 									<div class="col-sm-4">
-										<input class="form-control" type="date" id="date" name="date" placeholder="Date" />
+										<input class="form-control" type="date" id="date" name="date" min="2021-04-24" />
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="exampleFormControlTextarea1">Brief summary of project or request</label>
+									<label for="exampleFormControlTextarea1">Brief Summary of Project or Request</label>
 									<textarea class="form-control" id="htPreferences" rows="3"></textarea>
 								</div>
 								<div class="form-group row">
@@ -339,9 +415,8 @@
 									</div>
 								</div>
 								<div class="form-group row">
-									
 									<div class="input-group mb-3">
-                                        <label for="inputBudget" class="col-sm-3 col-form-label">Budget Amount</label>
+										<label for="inputBudget" class="col-sm-3 col-form-label">Budget Amount</label>
 										<div class="input-group-prepend ml-3">
 											<span class="input-group-text">$</span>
 										</div>
@@ -389,7 +464,7 @@
 									</div>
 								</fieldset>
 								<div class="form-group">
-									<label for="exampleFormControlTextarea1">Other requests or preferences</label>
+									<label for="exampleFormControlTextarea1">Other Requests or Preferences</label>
 									<textarea class="form-control" id="pcPreferences" rows="3"></textarea>
 								</div>
 								<div class="form-group row">
@@ -405,9 +480,10 @@
 			</div>
 		</div>
 		<!-- FOOTER -->
-		<hr />
-		<footer class="container-fluid bg-secondary text-light p-2">
-			<p>&copy; Torres Technology Consulting 2021</p>
+		<footer class="bg-secondary text-light p-1 bottom">
+			<div class="container">
+			<p class="pt-3 text-right">&copy; Torres Technology Consulting 2021</p>
+		</div>
 		</footer>
 
 		<!-- Scripts -->

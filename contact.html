@@ -13,60 +13,62 @@
 		/>
 		<!-- Additional CSS must be placed after Bootstrap CSS -->
 		<script src="https://kit.fontawesome.com/6aa1c0cc59.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+		<!-- <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" /> -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="css/styles.css" />
 		<title>Torres Tech</title>
 	</head>
 
 	<body>
 		<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
-			<a class="navbar-brand" href="index.html">
-				<img src="images/logo.png" width="40" height="40" alt="logo" />
-			</a>
-			<button
-				class="navbar-toggler"
-				type="button"
-				data-toggle="collapse"
-				data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			>
-				<span class="navbar-toggler-icon"></span>
-			</button>
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo.png" width="40" height="40" alt="logo" />
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="index.html">
-							Home
-							<span class="sr-only">(current)</span>
-						</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a
-							class="nav-link dropdown-toggle"
-							href="services.html"
-							id="navbarDropdown"
-							role="button"
-							data-toggle="dropdown"
-							aria-haspopup="true"
-							aria-expanded="false"
-						>
-							Services
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="services.html">IT Support</a>
-							<a class="dropdown-item" href="services.html#theater">Home Theater</a>
-							<a class="dropdown-item" href="services.html#custom">Custom Computers</a>
-						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Contact</a>
-					</li>
-				</ul>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">
+								Home
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="services.html"
+								id="navbarDropdown"
+								role="button"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								Services
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="services.html">IT Support</a>
+								<a class="dropdown-item" href="services.html#theater">Home Theater</a>
+								<a class="dropdown-item" href="services.html#custom">Custom Computers</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 		<main role="main" class="container mt-4">
@@ -75,67 +77,66 @@
 					<h2>Request More Information</h2>
 					<hr />
 				</div>
-				<div class="col-md-10">
+				<div class="col">
 					<form>
 						<div class="form-group row">
-							<label for="firstName" class="col-md-2 col-form-label">First Name</label>
-							<div class="col-md-10">
-								<input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+							<label for="inputFirst" class="col-sm-2 col-form-label">First Name</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" id="inputFirst" placeholder="First Name" />
+							</div>
+							<label for="inputLast" class="col-sm-2 col-form-label">Last Name</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" id="inputLase" placeholder="Last Name" />
 							</div>
 						</div>
 						<div class="form-group row">
-							<label for="lastName" class="col-md-2 col-form-label">Last Name</label>
-							<div class="col-md-10">
-								<input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+							<label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+							<div class="col-sm-4">
+								<input type="email" class="form-control" id="inputEmail" placeholder="Email" />
+							</div>
+                            <label for="inputPhone" class="col-sm-2 col-form-label">Phone Number</label>
+							<div class="col-sm-4">
+								<input type="tel" class="form-control" id="inputPhone" placeholder="Phone Number" />
 							</div>
 						</div>
 						<div class="form-group row">
-							<label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
-							<div class="col-5 col-md-3">
-								<input type="tel" id="areaCode" class="form-control" name="areaCode" placeholder="Area Code" />
-							</div>
-							<div class="col-7">
-								<input type="tel" class="form-control" name="telNum" placeholder="Tel. Number" />
-							</div>
-						</div>
-						<div class="form-group row">
-							<label for="email" class="col-md-2 col-form-label">Email</label>
-							<div class="col-md-10">
-								<input type="email" class="form-control" id="email" name="email" placeholder="Email" />
-							</div>
+                            <label class="col-sm-2 col-form-label">Service Type</label>
+							<div class="form-check form-check-inline ml-3">
+                                <input class="form-check-input" type="checkbox" id="miCheckbox1" value="miOption1" />
+                                <label class="form-check-label" for="miCheckbox1">IT Support</label>
+                            </div>
+                            <div class="form-check form-check-inline ml-3">
+                                <input class="form-check-input" type="checkbox" id="miCheckbox2" value="miOption2" />
+                                <label class="form-check-label" for="miCheckbox2">Home Theater</label>
+                            </div>
+                            <div class="form-check form-check-inline ml-3">
+                                <input class="form-check-input" type="checkbox" id="miCheckbox3" value="miOption3" />
+                                <label class="form-check-label" for="miCheckbox3">Custom Computer</label>
+                            </div>
+                            <div class="form-check form-check-inline ml-3">
+                                <input class="form-check-input" type="checkbox" id="miCheckbox4" value="miOption4" />
+                                <label class="form-check-label" for="miCheckbox4">Other (add details below)</label>
+                            </div>
 						</div>
 
-						<div class="form-group row">
-							<div class="col offset-md-2">
-								May we Contact You?
-								<div class="form-check form-check-inline">
-									<input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes" />
-									<label for="contactYes" class="form-check-label">Yes</label>
-								</div>
-								<div class="form-check form-check-inline">
-									<input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" />
-								</div>
-								<label for="contactNo" class="form-check-label">No</label>
-							</div>
+						<div class="form-group">
+							<label for="exampleFormControlTextarea1">Additional Comments or Questions</label>
+							<textarea class="form-control" id="htPreferences" rows="5"></textarea>
 						</div>
 						<div class="form-group row">
-							<label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
-							<div class="col-md-10">
-								<textarea class="form-control" id="feedback" name="feedback" rows="8"></textarea>
-							</div>
-						</div>
-						<div class="form-group row">
-							<div class="offset-md-2 col-md-10">
-								<button type="submit" class="btn btn-danger">Send</button>
+							<div class="col">
+								<button type="submit" class="btn btn-danger">Submit</button>
 							</div>
 						</div>
 					</form>
 				</div>
 			</div>
 		</main>
-		<hr />
-		<footer class="container-fluid bg-secondary text-light p-2 sticky-bottom">
-			<p>&copy; Torres Technology Consulting 2021</p>
+
+		<footer class="bg-secondary text-light p-1 fixed-bottom">
+			<div class="container">
+			<p class="pt-3 text-right">&copy; Torres Technology Consulting 2021</p>
+		</div>
 		</footer>
 
 		<!-- Scripts -->

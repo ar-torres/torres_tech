@@ -6,4 +6,8 @@ $(function () {
 	$("#htConsultButton").click(function () {
 		$("#htConsultModal").modal("show");
 	});
+
+    $("#itConsultButton").click(function () {
+		$("#itConsultModal").modal("show");
+	});
 });
